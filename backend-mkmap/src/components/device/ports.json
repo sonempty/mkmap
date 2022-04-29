@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_device_ports",
+  "info": {
+    "displayName": "Ports",
+    "icon": "band-aid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "to": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "FREE",
+        "USED",
+        "BOOKING",
+        "EXPRIED",
+        "BROKEN",
+        "ARCHIVED"
+      ],
+      "default": "ARCHIVED"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    }
+  }
+}

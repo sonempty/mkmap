@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "spliters",
+  "info": {
+    "singularName": "spliter",
+    "pluralName": "spliters",
+    "displayName": "Spliter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "cores": {
+      "type": "integer",
+      "unique": true,
+      "default": 8
+    },
+    "ports": {
+      "type": "component",
+      "repeatable": true,
+      "component": "device.ports"
+    },
+    "model": {
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "string"
+    }
+  }
+}

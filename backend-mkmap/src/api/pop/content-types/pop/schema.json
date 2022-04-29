@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pops",
+  "info": {
+    "singularName": "pop",
+    "pluralName": "pops",
+    "displayName": "Pop",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "postal_code": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "physical_address": {
+      "type": "string"
+    },
+    "lat_lng": {
+      "type": "component",
+      "repeatable": false,
+      "component": "map.position"
+    },
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "svg": {
+      "type": "text"
+    },
+    "model": {
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "boxes",
+  "info": {
+    "singularName": "box",
+    "pluralName": "boxes",
+    "displayName": "Box",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "cores": {
+      "type": "integer",
+      "required": true,
+      "default": 8
+    },
+    "ports": {
+      "type": "component",
+      "repeatable": true,
+      "component": "device.ports"
+    },
+    "lat_lng": {
+      "type": "component",
+      "repeatable": false,
+      "component": "map.position"
+    },
+    "physical_address": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "integer"
+    },
+    "svg": {
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "string"
+    }
+  }
+}

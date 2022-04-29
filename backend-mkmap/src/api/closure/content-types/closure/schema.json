@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "closures",
+  "info": {
+    "singularName": "closure",
+    "pluralName": "closures",
+    "displayName": "Closure",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "postal_code": {
+      "type": "integer"
+    },
+    "physical_address": {
+      "type": "string"
+    },
+    "in_ports": {
+      "type": "component",
+      "repeatable": true,
+      "component": "device.ports"
+    },
+    "out_ports": {
+      "type": "component",
+      "repeatable": true,
+      "component": "device.ports"
+    },
+    "cores": {
+      "type": "integer"
+    },
+    "svg": {
+      "type": "string"
+    }
+  }
+}

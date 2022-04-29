@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "olts",
+  "info": {
+    "singularName": "olt",
+    "pluralName": "olts",
+    "displayName": "Olt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "ip_address": {
+      "type": "string",
+      "required": true
+    },
+    "ports": {
+      "type": "component",
+      "repeatable": true,
+      "component": "device.ports"
+    },
+    "type": {
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mdfs",
+  "info": {
+    "singularName": "mdf",
+    "pluralName": "mdfs",
+    "displayName": "Mdf",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "physical_address": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "integer"
+    },
+    "cores": {
+      "type": "integer",
+      "default": 96,
+      "required": true
+    },
+    "lat_lng": {
+      "type": "component",
+      "repeatable": false,
+      "component": "map.position"
+    },
+    "svg": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-map-control-button {
+  background-color: rgb(17, 4, 75);
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 14px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  height: 32px;
+  cursor: pointer;
+}
+.custom-map-control-button:hover {
+  background: rgb(55, 46, 141);
+}
+
+.infor-div {
+  text-align: center;
+}
+.infor-div-4 {
+  display: flex;
+}
+.object-name {
+  padding: 2px;
+  margin: auto;
+}
+
+.port-FREE {
+  background-color: green;
+  color: white;
+  padding: 4px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 2px;
+}
+
+.port-USED {
+  background-color: blue;
+  color: white;
+  padding: 4px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 2px;
+}
+.port-EXPRIED {
+  background-color: peru;
+  color: white;
+  padding: 4px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 2px;
+}
+.port-BROKEN {
+  background-color: red;
+  color: white;
+  padding: 4px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 2px;
+}
+.port-BOOKING {
+  background-color: yellow;
+  padding: 4px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 2px;
+}
+.port-ARCHIVED {
+  background-color: gray;
+  color: white;
+  padding: 4px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 2px;
+}

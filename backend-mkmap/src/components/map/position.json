@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_map_positions",
+  "info": {
+    "displayName": "position",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "lat": {
+      "type": "decimal",
+      "default": 11.562232003357408,
+      "required": false
+    },
+    "lng": {
+      "type": "decimal",
+      "default": 104.92629065348817
+    }
+  }
+}
