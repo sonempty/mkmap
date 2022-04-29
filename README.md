@@ -22,7 +22,7 @@ pg_ctlcluster 12 main start
 
 sudo -i -u postgres
 psql
-ALTER USER postgres PASSWORD 'Gadetrung123!@#';
+ALTER USER postgres PASSWORD 'dadsdadasdasdasda';
 \q
 createdb strapi
 
